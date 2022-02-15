@@ -66,8 +66,10 @@ h1 {
   line-height: 42px;
   display: flex;
   align-items: center;
+  color: #ffffff;
+  padding-bottom: 60px;
 }
-p {
+p.intro {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -75,6 +77,9 @@ p {
   line-height: 21px;
   display: flex;
   align-items: center;
+  color: #ffffff;
+  padding-bottom: 60px;
+  padding-left: 0px;
 }
 a {
   font-family: Roboto;
@@ -86,6 +91,7 @@ a {
   align-items: center;
   text-align: center;
   text-decoration: none;
+  padding-left: 57px;
 }
 .button-offer {
   width: 164px;
@@ -113,12 +119,28 @@ a {
 section {
   list-style-type: none;
   padding: 0 90px 0 90px;
+  background-color: #f1f1f1;
 }
-h1 {
+.name {
   padding: 50px 0;
+  color: #152d41;
 }
 h3 {
   padding: 20px 0;
+  padding-left: 40px;
+  color: #000000;
+}
+p {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .person1 {
   margin: 20px;
@@ -156,6 +178,9 @@ li:nth-of-type(even) {
   flex-direction: row-reverse;
   align-items: center;
 }
+ul.specjaliści {
+  padding-bottom: 60px;
+}
 /* tresc cz2 */
 
 #last {
@@ -177,14 +202,16 @@ li:nth-of-type(even) {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
 }
-.service {
+li.service {
   width: 198px;
   height: 194px;
   background-color: #f1f1f1;
   list-style-type: none;
   margin: 20px;
   line-height: 194px;
+  display: inline-block;
 }
 
 /* footer */
