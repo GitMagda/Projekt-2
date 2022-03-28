@@ -193,50 +193,74 @@ ul.specjaliści {
 }
 .offer-h {
   align-self: start;
+  margin-top: 20px;
 }
-.boxes-set {
-  width: 720px;
-  height: 451px;
-  margin-bottom: 60px;
+.offers-wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  width: 720px;
+  margin: auto;
+}
+.offers-wrapper-box {
+  width: 30%;
+  padding-bottom: 30%;
+  margin-right: 5%;
+  background-color: #f1f1f1;
+  margin-bottom: 5%;
+  position: relative;
+  transition-duration: 0.5s;
+}
+.offers-wrapper-box:nth-of-type(3n) {
+  margin-right: 0;
+}
+.offers-wrapper-box:hover {
+  transform: scale(1.05);
+}
+.offers-wrapper-box-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-li.service {
-  width: 198px;
-  height: 194px;
-  background-color: #f1f1f1;
-  list-style-type: none;
-  margin: 20px;
-  line-height: 194px;
-  display: inline-block;
+.offers-wrapper-box-content h2 {
+  font-size: 24px;
+}
+.dott {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #e07a64;
+  border-radius: 50%;
+  top: -9px;
+  left: -9px;
 }
 
-/* footer */
-#footer {
-  width: 100%;
-  height: 71px;
+footer {
+  height: 50px;
   background-color: #4e4e4e;
-  padding: 0 90px 0 90px;
+  color: white;
   display: flex;
+  flex-direction: column;
+}
+.container-footer {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
+  padding: 10px;
+}
+.footer-icon {
+  display: flex;
 }
 .koniec {
   display: flex;
   justify-content: space-between;
-  color: #ffffff;
 }
 .fab {
-  padding: 20px;
+  padding-right: 20px;
 }
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -251,7 +275,7 @@ li.service {
     display: inline-flex;
     flex-direction: column;
   }
-  .boxes-set {
+  .offers-wrapper {
     flex-direction: column;
     margin: auto;
     align-items: stretch;

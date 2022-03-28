@@ -3,10 +3,6 @@
     visibility: hidden;
     display: none;
   }
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media screen and (min-width: 960px) {
